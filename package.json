@@ -1,6 +1,6 @@
 {
   "name": "little-canvas",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "a little canvas tool",
   "main": "index.js",
   "scripts": {
@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/amenging/little-canvas#readme",
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
-  }
+    "registry": "https://registry.npmjs.org"
+  },
+  "types": "index.d.ts"
 }

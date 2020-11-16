@@ -74,8 +74,8 @@ export function drawClipImage (img, imgDrawWidth, imgDrawHeight, x, y, ctx) {
 /**
  * 旋转文字
  * @param {string} text 
- * @param {number} x 
- * @param {number} y 
+ * @param {number} x 文字左上角x坐标
+ * @param {number} y 文字左上角y坐标
  * @param {number} angle 
  * @param {canvasContext2D} ctx 
  */
@@ -91,15 +91,15 @@ export function drawRotateText (text, x, y, angle, ctx) {
 /**
  * 圆形图片
  * @param {img} img 
- * @param {number} x 
- * @param {number} y 
- * @param {number} radius 
+ * @param {number} x 图片左上角x坐标
+ * @param {number} y 图片左上角y坐标
+ * @param {number} radius 半径
  * @param {canvasContext2D} ctx 
  */
 export function drawCircleImage (img, x, y, radius, ctx) {
   ctx.save()
   ctx.arc(x + radius, y + radius, radius, 0, 2 * Math.PI)
   ctx.clip()
-  ctx.drawImage(data.avatar, x, y, radius * 2, radius * 2)
+  ctx.drawImage(img, x, y, radius * 2, radius * 2)
   ctx.restore()
 }
